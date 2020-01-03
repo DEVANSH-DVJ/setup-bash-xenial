@@ -18,6 +18,7 @@ sudo apt install opera-stable
 sudo add-apt-repository ppa:webupd8team/atom
 sudo apt-get update
 sudo apt-get install atom
+sudo apm install goto-definition
 
 #SUBLIME TEXT (IDE)
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
