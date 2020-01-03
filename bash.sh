@@ -1,5 +1,5 @@
 #WPS-OFFICE
-sudo snap install wps-office  
+sudo snap install wps-office
 
 #CHROME
 sudo echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/aources.list
