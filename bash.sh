@@ -1,3 +1,15 @@
+#GIT
+sudo apt update
+sudo apt install git
+git config --global user.name "devansh-dvj"
+git config --global user.email "devansh.dvj@gmail.com"
+echo "[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short" >> ~/.gitconfig
+
 #WPS-OFFICE (WORD, EXCEL, PRESENTATION)
 sudo snap install wps-office
 
@@ -44,12 +56,15 @@ sudo apt install terminator
 sudo apt install curl
 curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
 sudo apt install nodejs
+#ANGULAR-TS
+npm install -g @angular/cli
+#BROWSER-SYNC
+npm install -g browser-sync
 
 #VIM
 sudo apt remove --assume-yes vim-tiny
 sudo apt update
 sudo apt install --asume-yes vim
-
 #VIMRC
 echo "set tabstop=4
 set shiftwidth=4
@@ -66,12 +81,6 @@ nnoremap rm :nohlsearch<CR>
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/" > ./vimrc
 
-#ANGULAR-TS
-npm install -g @angular/cli
-
-#BROWSER-SYNC
-npm install -g browser-sync
-
 #FOXIT-READER
 cd /tmp
 wget http://cdn01.foxitsoftware.com/pub/foxit/reader/desktop/linux/2.x/2.4/en_us/FoxitReader2.4.1.0609_Server_x64_enu_Setup.run.tar.gz
@@ -86,7 +95,7 @@ sudo apt install unity-tweak-tool gnome-tweak-tool
 sudo apt update
 sudo apt install compizconfig-settings-manager
 
-#ROS && ROBOSUB
+#INSTALLING ROS
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
 sudo apt update
@@ -135,29 +144,3 @@ sudo apt install libpugixml-dev libpugixml1v5 libpugixml1v5-dbgsym pugixml-doc
 #INSTALLING ROBOSUB
 cd ~/catkin_ws
 catkin_make
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
