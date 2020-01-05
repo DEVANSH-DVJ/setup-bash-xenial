@@ -14,11 +14,13 @@ echo "[alias]
 sudo snap install wps-office
 
 #CHROME (BROWSER)
-sudo echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list
-wget https://dl.google.com/linux/linux_signing_key.pub
-sudo apt-key add linux_signing_key.pub
-sudo apt update
-sudo apt install google-chrome-stable
+#sudo echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list
+#wget https://dl.google.com/linux/linux_signing_key.pub
+#sudo apt-key add linux_signing_key.pub
+#sudo apt update
+#sudo apt install google-chrome-stable
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 #OPERA (BROWSER)
 wget -qO- https://deb.opera.com/archive.key | sudo apt-key add -
@@ -30,7 +32,7 @@ sudo apt install opera-stable
 sudo add-apt-repository ppa:webupd8team/atom
 sudo apt update
 sudo apt install atom
-sudo apm install goto-definition
+apm install goto-definition
 
 #SUBLIME TEXT (IDE) && SUBLIME MERGE
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
