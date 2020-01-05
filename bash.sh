@@ -29,28 +29,12 @@ sudo add-apt-repository "deb [arch=i386,amd64] https://deb.opera.com/opera-stabl
 sudo apt update
 sudo apt install opera-stable
 
-#ATOM (IDE)
-#sudo add-apt-repository ppa:webupd8team/atom
-#sudo apt update
-#sudo apt install atom
-#wget https://atom.io/download/deb -O atom.deb
-#sudo dpkg -i atom.deb
-#apm install goto-definition
-
-#SUBLIME TEXT (IDE) && SUBLIME MERGE
-wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-sudo apt install apt-transport-https
-echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
-sudo apt update
-sudo apt install sublime-text
-sudo apt install sublime-merge
-
 #PDFSAM (PDF EDITOR)
 sudo apt install openjdk-8-jre libopenjfx-jni libopenjfx-java openjfx
 sudo echo "JAVA_HOME=\"/usr/lib/jvm/java-8-openjdk-amd64\"" >> /etc/environment
 source /etc/environment
 echo $JAVA_HOME
-wget https://github.com/torakiki/pdfsam/releases/download/v3.1.0.RELEASE/pdfsam-3.1.0.RELEASE-1_all.deb
+wget https://github.com/torakiki/pdfsam/releases/download/v3.1.0.RELEASE/pdfsam-3.1.0.RELEASE-1_all.deb -O pdfsam-3.1.0.RELEASE-1_all.deb
 sudo dpkg -i pdfsam-3.1.0.RELEASE-1_all.deb
 
 #TERMINATOR
@@ -87,10 +71,14 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/" > ./vimrc
 
 #FOXIT-READER
-cd /tmp
-wget http://cdn01.foxitsoftware.com/pub/foxit/reader/desktop/linux/2.x/2.4/en_us/FoxitReader2.4.1.0609_Server_x64_enu_Setup.run.tar.gz
-tar -xvf FoxitReader*.tar.gz
-sudo ./FoxitReader.enu.setup.2.4.1.0609\(r08f07f8\).x64.run
+#cd /tmp
+#wget http://cdn01.foxitsoftware.com/pub/foxit/reader/desktop/linux/2.x/2.4/en_us/FoxitReader2.4.1.0609_Server_x64_enu_Setup.run.tar.gz
+#tar -xvf FoxitReader*.tar.gz
+#sudo ./FoxitReader.enu.setup.2.4.1.0609\(r08f07f8\).x64.run
+wget http://cdn01.foxitsoftware.com/pub/foxit/reader/desktop/linux/2.x/2.1/en_us/FoxitReader2.1.0805_Server_x64_enu_Setup.run.tar.gz
+tar xzvf FoxitReader*.tar.gz
+sudo chmod a+x FoxitReader*.run
+sudo ./FoxitReader.*.run
 
 #UNITY TWEAK TOOL
 sudo apt update
@@ -149,3 +137,19 @@ sudo apt install libpugixml-dev libpugixml1v5 libpugixml1v5-dbgsym pugixml-doc
 #INSTALLING ROBOSUB
 cd ~/catkin_ws
 catkin_make
+
+#ATOM (IDE)
+#sudo add-apt-repository ppa:webupd8team/atom
+#sudo apt update
+#sudo apt install atom
+wget https://atom.io/download/deb -O atom.deb
+sudo dpkg -i atom.deb
+apm install goto-definition
+
+#SUBLIME TEXT (IDE) && SUBLIME MERGE
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+sudo apt install apt-transport-https
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+sudo apt update
+sudo apt install sublime-text
+sudo apt install sublime-merge
