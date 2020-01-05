@@ -19,8 +19,9 @@ sudo snap install wps-office
 #sudo apt-key add linux_signing_key.pub
 #sudo apt update
 #sudo apt install google-chrome-stable
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
+sudo apt upgrade
 
 #OPERA (BROWSER)
 wget -qO- https://deb.opera.com/archive.key | sudo apt-key add -
@@ -29,10 +30,12 @@ sudo apt update
 sudo apt install opera-stable
 
 #ATOM (IDE)
-sudo add-apt-repository ppa:webupd8team/atom
-sudo apt update
-sudo apt install atom
-apm install goto-definition
+#sudo add-apt-repository ppa:webupd8team/atom
+#sudo apt update
+#sudo apt install atom
+#wget https://atom.io/download/deb -O atom.deb
+#sudo dpkg -i atom.deb
+#apm install goto-definition
 
 #SUBLIME TEXT (IDE) && SUBLIME MERGE
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
@@ -59,9 +62,9 @@ sudo apt install curl
 curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
 sudo apt install nodejs
 #ANGULAR-TS
-npm install -g @angular/cli
+sudo npm install -g @angular/cli
 #BROWSER-SYNC
-npm install -g browser-sync
+sudo npm install -g browser-sync
 
 #VIM
 sudo apt remove --assume-yes vim-tiny
