@@ -14,7 +14,7 @@ echo "[alias]
 sudo snap install wps-office
 
 #CHROME (BROWSER)
-sudo echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/aources.list
+sudo echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list
 wget https://dl.google.com/linux/linux_signing_key.pub
 sudo apt-key add linux_signing_key.pub
 sudo apt update
