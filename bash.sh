@@ -1,3 +1,5 @@
+sudo apt upgrade;
+
 #GIT
 sudo apt update;
 sudo apt -y install git;
@@ -153,7 +155,4 @@ sudo ./FoxitReader.*.run;
 ##echo $JAVA_HOME;
 ##wget https://github.com/torakiki/pdfsam/releases/download/v3.1.0.RELEASE/pdfsam-3.1.0.RELEASE-1_all.deb -O pdfsam-3.1.0.RELEASE-1_all.deb;
 ##sudo dpkg -i pdfsam-3.1.0.RELEASE-1_all.deb;
-
-#UPGRADE (IF CHROME, OPERA MALFUNCTION)
-sudo apt -y upgrade;
 
