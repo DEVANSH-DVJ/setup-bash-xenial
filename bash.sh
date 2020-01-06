@@ -13,16 +13,16 @@ echo "[alias]
   hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short" >> ~/.gitconfig;
 
 #UNITY TWEAK TOOL
-##sudo apt update;
-##sudo apt -y install unity-tweak-tool gnome-tweak-tool;
+sudo apt update;
+sudo apt -y install unity-tweak-tool gnome-tweak-tool;
 
 #COMPIZCONFIG SETTINGS MANAGER
 ##sudo apt update;
-##sudo apt -y install compizconfig-settings-manager;
+sudo apt -y install compizconfig-settings-manager;
 
 #VIM
 sudo apt -y remove vim-tiny;
-sudo apt update;
+##sudo apt update;
 sudo apt -y install vim;
 #VIMRC
 echo "set tabstop=4
@@ -42,31 +42,26 @@ match ExtraWhitespace /\s\+$/" > ~/.vimrc;
 
 #TERMINATOR
 ##sudo apt update;
-##sudo apt -y install terminator;
+sudo apt -y install terminator;
 
 #CHROME (BROWSER)
-#sudo echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list;
-#wget https://dl.google.com/linux/linux_signing_key.pub;
-#sudo apt-key add linux_signing_key.pub;
-#sudo apt update;
-#sudo apt -y install google-chrome-stable;
-##wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O google-chrome-stable_current_amd64.deb;
-##sudo dpkg -i google-chrome-stable_current_amd64.deb;
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O google-chrome-stable_current_amd64.deb;
+sudo dpkg -i google-chrome-stable_current_amd64.deb;
 
 #OPERA (BROWSER)
-##wget -qO- https://deb.opera.com/archive.key | sudo apt-key add -;
-##sudo add-apt-repository "deb [arch=i386,amd64] https://deb.opera.com/opera-stable/ stable non-free";
-##sudo apt update;
-##sudo apt -y install opera-stable;
+wget -qO- https://deb.opera.com/archive.key | sudo apt-key add -;
+sudo add-apt-repository "deb [arch=i386,amd64] https://deb.opera.com/opera-stable/ stable non-free";
+sudo apt update;
+sudo apt -y install opera-stable;
 
 #NODEJS
-##sudo apt -y install curl;
-##curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -;
-##sudo apt -y install nodejs;
+sudo apt -y install curl;
+curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -;
+sudo apt -y install nodejs;
 #ANGULAR-TS
-##sudo npm install -g @angular/cli;
+sudo npm install -g @angular/cli;
 #BROWSER-SYNC
-##sudo npm install -g browser-sync;
+sudo npm install -g browser-sync;
 
 #INSTALLING ROS
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list';
@@ -82,33 +77,35 @@ sudo apt -y install python-rosinstall python-rosinstall-generator python-wstool 
 mkdir -p ~/catkin_ws/src;
 cd ~/catkin_ws;
 catkin_make;
-source devel/source.bash;
+source devel/setup.bash;
 #ROBOSUB DOWNLOAD
 cd src;
 git clone https://github.com/auv-iitb/robosub.git;
-echo "source ~/catkin_ws/devel/setup.bash;
-source ~/catkin_ws/src/robosub/auv_utils/src/utility/bash/robosub_bash;
+echo "source ~/catkin_ws/devel/setup.bash
+source ~/catkin_ws/src/robosub/auv_utils/src/utility/bash/robosub_bash
 source ~/catkin_ws/src/robosub/auv_utils/src/utility/bash/robosub_aliases" >> ~/.bashrc;
 source ~/.bashrc;
 #FFTW LIBRARY
-#cd ~;
-#wget "http://www.fftw.org/fftw-3.3.8.tar.gz";
-#tar -zxvf fftw-3.3.8.tar.gz;
-#cd fftw-3.3.8;
-#sudo ./configure;
-#sudo make;
-#sudo make install;
+##cd ~;
+##wget "http://www.fftw.org/fftw-3.3.8.tar.gz";
+##tar -zxvf fftw-3.3.8.tar.gz;
+##cd fftw-3.3.8;
+##sudo ./configure;
+##sudo make;
+##sudo make install;
+##sudo apt update;
 sudo apt -y install libfftw3-dev;
 #BFL LIBRARY
-sudo apt update;
+##sudo apt update;
 sudo apt -y install ros-kinetic-bfl;
 #PUGIXML LIBRARY
-sudo apt update;
+##sudo apt update;
 sudo apt -y install libpcap0.8 libpcap0.8-dev libpcap-dev;
 #PCAP LIBRARY
-sudo apt update;
-sudo apt -y install libpugixml-dev libpugixml1v5 libpugixml1v5-dbgsym pugixml-doc;
+##sudo apt update;
+sudo apt -y install libpugixml-dev libpugixml1v5 pugixml-doc;
 #OTHER LIBRARIES
+##sudo apt update;
 sudo apt -y install ros-kinetic-gazebo-ros-pkgs ros-kinetic-gazebo-ros-control;
 sudo apt -y install tree;
 sudo apt -y install python-argcomplete;
@@ -120,20 +117,19 @@ catkin_make;
 #VIMBA DRIVER(//TODO after switching to Vimba3.1)
 
 #ATOM (IDE)
-#sudo add-apt-repository ppa:webupd8team/atom;
-#sudo apt update;
-#sudo apt -y install atom;
+sudo apt update;
+cd ~;
 wget https://atom.io/download/deb -O atom.deb;
 sudo dpkg -i atom.deb;
 apm install goto-definition;
 
 #SUBLIME TEXT (IDE) && SUBLIME MERGE
-##wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -;
-##sudo apt -y install apt-transport-https;
-##echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list;
-##sudo apt update;
-##sudo apt -y install sublime-text;
-##sudo apt -y install sublime-merge;
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -;
+sudo apt -y install apt-transport-https;
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list;
+sudo apt update;
+sudo apt -y install sublime-text;
+sudo apt -y install sublime-merge;
 
 #FOXIT-READER
 ##cd /tmp;
@@ -146,13 +142,13 @@ sudo chmod a+x FoxitReader*.run;
 sudo ./FoxitReader.*.run;
 
 #WPS-OFFICE (WORD, EXCEL, PRESENTATION)
-##sudo snap install wps-office;
+sudo snap install wps-office;
 
 #PDFSAM (PDF EDITOR)
-##sudo apt install openjdk-8-jre libopenjfx-jni libopenjfx-java openjfx;
-##sudo echo "JAVA_HOME=\"/usr/lib/jvm/java-8-openjdk-amd64\"" >> /etc/environment;
-##source /etc/environment;
-##echo $JAVA_HOME;
-##wget https://github.com/torakiki/pdfsam/releases/download/v3.1.0.RELEASE/pdfsam-3.1.0.RELEASE-1_all.deb -O pdfsam-3.1.0.RELEASE-1_all.deb;
-##sudo dpkg -i pdfsam-3.1.0.RELEASE-1_all.deb;
+sudo apt install openjdk-8-jre libopenjfx-jni libopenjfx-java openjfx;
+sudo echo "JAVA_HOME=\"/usr/lib/jvm/java-8-openjdk-amd64\"" >> /etc/environment;
+source /etc/environment;
+echo $JAVA_HOME;
+wget https://github.com/torakiki/pdfsam/releases/download/v3.1.0.RELEASE/pdfsam-3.1.0.RELEASE-1_all.deb -O pdfsam-3.1.0.RELEASE-1_all.deb;
+sudo dpkg -i pdfsam-3.1.0.RELEASE-1_all.deb;
 
