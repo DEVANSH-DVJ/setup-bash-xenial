@@ -36,7 +36,7 @@ nnoremap sp :set paste<CR>
 nnoremap zp :set nopaste<CR>
 nnoremap rm :nohlsearch<CR>
 highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/" > ./vimrc;
+match ExtraWhitespace /\s\+$/" > ~/.vimrc;
 
 #TERMINATOR
 ##sudo apt update;
