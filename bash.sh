@@ -110,6 +110,7 @@ sudo apt -y install libpugixml-dev libpugixml1v5 libpugixml1v5-dbgsym pugixml-do
 sudo apt -y install ros-kinetic-gazebo-ros-pkgs ros-kinetic-gazebo-ros-control;
 sudo apt -y install tree;
 sudo apt -y install python-argcomplete;
+sudo apt -y install pylint;
 #INSTALLING ROBOSUB
 cd ~/catkin_ws;
 catkin_make;
