@@ -132,11 +132,7 @@ sudo apt -y install sublime-text;
 sudo apt -y install sublime-merge;
 
 #FOXIT-READER
-##cd /tmp;
-##wget http://cdn01.foxitsoftware.com/pub/foxit/reader/desktop/linux/2.x/2.4/en_us/FoxitReader2.4.1.0609_Server_x64_enu_Setup.run.tar.gz;
-##tar -xvf FoxitReader*.tar.gz;
-##sudo ./FoxitReader.enu.setup.2.4.1.0609\(r08f07f8\).x64.run;
-wget http://cdn01.foxitsoftware.com/pub/foxit/reader/desktop/linux/2.x/2.1/en_us/FoxitReader2.1.0805_Server_x64_enu_Setup.run.tar.gz;
+wget http://cdn01.foxitsoftware.com/pub/foxit/reader/desktop/linux/2.x/2.4/en_us/FoxitReader2.4.1.0609_Server_x64_enu_Setup.run.tar.gz;
 tar xzvf FoxitReader*.tar.gz;
 sudo chmod a+x FoxitReader*.run;
 sudo ./FoxitReader.*.run;
