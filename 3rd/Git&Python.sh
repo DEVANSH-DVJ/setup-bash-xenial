@@ -1,20 +1,20 @@
 sudo apt update;
 sudo apt -y install git;
-#git config --global user.name "devansh-dvj";
-#git config --global user.email "devansh.dvj@gmail.com";
-#echo "[alias]
-#  co = checkout
-#  ci = commit
-#  st = status
-#  br = branch
-#  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
-#" >> ~/.gitconfig;
-#cat ~/.gitconfig;
+git config --global user.name "devansh-dvj";
+git config --global user.email "devansh.dvj@gmail.com";
+echo "[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+" >> ~/.gitconfig;
+cat ~/.gitconfig;
 
-#ln -s ~/Windows/Users/devan/Desktop/EVERYTHING/ ~/Desktop/EVERYTHING;
-#ln -s ~/Windows/Users/devan/Desktop/EVERYTHING/IITB/ ~/Desktop/IITB;
-#ln -s ~/Windows/Users/devan/Desktop/EVERYTHING/BOOKS/ ~/Desktop/BOOKS;
-#ln -s ~/Windows/Users/devan/Desktop/EVERYTHING/PROJECTS/ ~/Desktop/PROJECTS;
+ln -s ~/Windows/Users/devan/Desktop/EVERYTHING/ ~/Desktop/EVERYTHING;
+ln -s ~/Windows/Users/devan/Desktop/EVERYTHING/IITB/ ~/Desktop/IITB;
+ln -s ~/Windows/Users/devan/Desktop/EVERYTHING/BOOKS/ ~/Desktop/BOOKS;
+ln -s ~/Windows/Users/devan/Desktop/EVERYTHING/PROJECTS/ ~/Desktop/PROJECTS;
 
 ssh-keygen -t rsa -b 4096 -C "devansh.dvj@gmail.com";
 ssh-add ~/.ssh/id_rsa;

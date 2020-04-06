@@ -12,7 +12,7 @@ source ~/.bashrc;
 sudo apt -y install python-rosinstall python-rosinstall-generator python-wstool build-essential;
 
 ######################################
-# In a new terminal
+# In a new terminal amd check if catkin_make still works
 
 mkdir -p ~/catkin_ws/src;
 cd ~/catkin_ws;
