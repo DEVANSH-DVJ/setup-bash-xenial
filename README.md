@@ -1,2 +1,2 @@
 # setup-bash
-One file setup of my PC
+Bash scripts used to set Ubuntu on my Laptop.
