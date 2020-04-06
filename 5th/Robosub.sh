@@ -33,7 +33,7 @@ sudo apt -y install libpugixml-dev libpugixml1v5 pugixml-doc;
 sudo apt -y install ros-kinetic-gazebo-ros-pkgs ros-kinetic-gazebo-ros-control;
 sudo apt -y install tree;
 sudo apt -y install python-argcomplete;
-sudo apt -y install pylint;
+sudo apt -y install pylint clang-format;
 
 mv ~/beginner_tutorials/ ~/catkin_ws/src
 mv ~/first_task/ ~/catkin_ws/src
