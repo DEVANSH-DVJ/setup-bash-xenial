@@ -129,6 +129,7 @@ sudo apt update;
 cd ~;
 wget https://atom.io/download/deb -O atom-amd64.deb;
 sudo dpkg -i atom-amd64.deb;
+atom .;
 sudo apm install goto-definition;
 
 #SUBLIME TEXT (IDE) && SUBLIME MERGE
@@ -169,8 +170,17 @@ sudo apt update;
 sudo apt -y install python3.8;
 
 #JUPYTER NOTEBOOK
-sudo apt install python3-pip
-pip3 install notebook
-alias jp='jupyter-notebook'
+sudo apt install python3-pip;
+pip3 install notebook;
+alias jp='jupyter-notebook';
 
-#DJANGO
+#4K VIDEO DOWNLOADER
+wget https://dl.4kdownload.com/app/4kvideodownloader_4.4.0-1_amd64.deb;
+sudo dpkg -i 4kvideodownloader_4.4.0-1_amd64.deb;
+4kvideodownloader;
+
+#IITBVPN
+echo "
+alias iitbin='sudo systemctl start openvpn@iitbvpn.service';
+alias iitbout='sudo systemctl stop openvpn@iitbvpn.service';
+" >> ~/.bashrc;

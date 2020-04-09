@@ -54,6 +54,6 @@ echo "alias 1='source ~/virtualenvs/2.7.12/bin/activate';
 alias 2='source ~/virtualenvs/3.5.2/bin/activate';
 alias 3='source ~/virtualenvs/3.8.2/bin/activate';
 alias 0='deactivate';
-alias jp='source ~/virtualenvs/3.8.2/bin/activate; jupyter-notebook'
+alias jp='source ~/virtualenvs/3.8.2/bin/activate; jupyter-notebook';
 " >> ~/.bashrc
 

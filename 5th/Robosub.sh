@@ -21,9 +21,10 @@ source devel/setup.bash;
 
 cd src;
 git clone git@github.com:auv-iitb/robosub.git;
-echo "source ~/catkin_ws/devel/setup.bash
-source ~/catkin_ws/src/robosub/auv_utils/src/utility/bash/robosub_bash
-source ~/catkin_ws/src/robosub/auv_utils/src/utility/bash/robosub_aliases" >> ~/.bashrc;
+echo "source ~/catkin_ws/devel/setup.bash;
+source ~/catkin_ws/src/robosub/auv_utils/src/utility/bash/robosub_bash;
+source ~/catkin_ws/src/robosub/auv_utils/src/utility/bash/robosub_aliases;
+" >> ~/.bashrc;
 source ~/.bashrc;
 
 sudo apt -y install libfftw3-dev;
