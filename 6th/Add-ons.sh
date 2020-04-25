@@ -6,7 +6,7 @@ wget https://atom.io/download/deb -O atom-amd64.deb;
 sudo dpkg -i atom-amd64.deb;
 sudo apm install goto-definition;
 sudo rm -rf atom-amd64.deb;
-atom;
+atom .;
 
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -;
 sudo apt -y install apt-transport-https;

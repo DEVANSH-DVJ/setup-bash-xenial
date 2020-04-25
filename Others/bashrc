@@ -116,6 +116,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
+source /opt/ros/kinetic/setup.bash;
 source ~/catkin_ws/devel/setup.bash;
 source ~/catkin_ws/src/robosub/auv_utils/src/utility/bash/robosub_bash;
 source ~/catkin_ws/src/robosub/auv_utils/src/utility/bash/robosub_aliases;
