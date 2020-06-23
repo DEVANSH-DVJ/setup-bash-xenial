@@ -37,7 +37,7 @@ virtualenv -p python2.7 2.7.12;
 
 source 2.7.12/bin/activate;
 pip install --upgrade pip;
-pip install setuptools==44.0.0 Django numpy scipy matplotlib ipython jupyter pandas astropy pygame wget lxml channels xlrd;
+pip install setuptools==44.0.0 Django numpy scipy matplotlib pygame channels pathlib;
 deactivate;
 
 source 3.5.2/bin/activate;

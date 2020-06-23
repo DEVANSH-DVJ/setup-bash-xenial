@@ -27,7 +27,7 @@ sudo apt -y install bash-completion;
 sudo apt update;
 
 sudo apt -y install curl;
-curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -;
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -;
 sudo apt -y install nodejs;
 
 sudo npm install -g @angular/cli;
