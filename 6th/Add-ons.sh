@@ -29,3 +29,9 @@ sudo chmod a+x FoxitReader*.run;
 sudo ./FoxitReader.*.run;
 sudo rm -rf Foxit*;
 
+sudo snap install telegram-desktop;
+sudo snap install discord;
+
+sudo apt install -y texlive-full;
+sudo snap install okular;
+sudo apt install -y vlc;
