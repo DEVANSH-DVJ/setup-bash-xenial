@@ -26,8 +26,8 @@ cd ~/virtualenvs;
 
 sudo add-apt-repository ppa:deadsnakes/ppa;
 sudo apt update;
-sudo apt -y install python3.8;
-sudo apt -y install python3.8-venv;
+sudo apt -y install python3.8 python3.8-venv python3.8-tk;
+sudo apt -y install python3-tk python-tk;
 python3.8 -m venv 3.8.2;
 
 sudo apt -y install virtualenv;
@@ -47,7 +47,7 @@ deactivate;
 
 source 3.8.2/bin/activate;
 pip install --upgrade pip;
-pip install Django numpy scipy matplotlib ipython jupyter pandas wheel bs4 requests astropy wget lxml xlrd;
+pip install Django numpy scipy matplotlib ipython jupyter pandas wheel bs4 requests astropy wget lxml xlrd yaml;
 deactivate;
 
 echo "alias 2='source ~/virtualenvs/2.7.12/bin/activate';
