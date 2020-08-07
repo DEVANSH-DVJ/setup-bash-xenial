@@ -1,7 +1,7 @@
 # setup-bash-xenial
-Bash scripts used to set Ubuntu 16.04.6 on my Laptop.  
+Bash scripts used to set Ubuntu 16.04.6 on my Laptop.
 
-Old : Run scripts inside folders in respective order. (Tested but not deprecated) 
+Old : Run scripts inside folders in respective order. (Tested but not deprecated)
 
 New order: (Yet to be Tested)
 1. Primary Setup
@@ -26,9 +26,10 @@ New order: (Yet to be Tested)
    2. Check each environment during Step 5.
 5. Add-ons
    1. Run Add-ons.sh
-   2. Check packages in atom and VS code
-   3. While the big installs happen, configure unity-tweak-tools
-   4. Once the driver is installed, configure the changes.
-   5. **Reboot**
+   2. Check packages in Atom
+   3. Install Extensions for VSCode
+   4. While the big installs happen, configure unity-tweak-tools
+   5. Once the driver is installed, configure the changes.
+   6. **Reboot**
 
 Note: Run all bash scripts from the base directory of this repo.
