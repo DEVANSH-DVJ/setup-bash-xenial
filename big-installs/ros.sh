@@ -23,6 +23,7 @@ git checkout matsya_5_branch;
 echo "source ~/catkin_ws/devel/setup.bash;
 source ~/catkin_ws/src/robosub/auv_utils/src/utility/bash/robosub_bash;
 source ~/catkin_ws/src/robosub/auv_utils/src/utility/bash/robosub_aliases;
+alias wrapper.py='python ~/catkin_ws/src/robosub/auv_utils/src/utility/wrapper/wrapper.py'
 " >> ~/.bashrc;
 source ~/.bashrc;
 
