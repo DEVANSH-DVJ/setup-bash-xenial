@@ -28,12 +28,9 @@ source ~/.bashrc;
 
 sudo apt -y install libfftw3-dev;
 sudo apt -y install ros-kinetic-bfl;
-sudo apt -y install libpcap0.8 libpcap0.8-dev libpcap-dev;
-sudo apt -y install libpugixml-dev libpugixml1v5 pugixml-doc;
+sudo apt -y install libpcap-dev;
+sudo apt -y install libpugixml-dev;
 sudo apt -y install ros-kinetic-gazebo-ros-pkgs ros-kinetic-gazebo-ros-control;
-sudo apt -y install tree;
-sudo apt -y install python-argcomplete;
-sudo apt -y install pylint clang-format;
 
 cd ~/catkin_ws;
 catkin_make;

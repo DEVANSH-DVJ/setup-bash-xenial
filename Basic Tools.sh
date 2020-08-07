@@ -1,7 +1,9 @@
-sudo apt -y install tree;
 sudo apt -y install terminator;
+sudo apt -y install tree;
 sudo apt -y install bash-completion;
+sudo apt -y install python-argcomplete python3-argcomplete;
 sudo apt -y install flake8 isort;
+sudo apt -y install pylint clang-format;
 
 bash ./vim/Install.sh;
 bash ./vim/Configurations.sh;
