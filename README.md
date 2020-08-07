@@ -1,8 +1,9 @@
 # setup-bash-xenial
 Bash scripts used to set Ubuntu 16.04.6 on my Laptop.  
-Old : Run scripts inside folders in respective order.  
 
-New order:
+Old : Run scripts inside folders in respective order. (Tested but not deprecated) 
+
+New order: (Yet to be Tested)
 1. Primary Setup
    1. Make changes to the Settings (settings/)
    2. Run Primary Setup.sh
