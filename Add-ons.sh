@@ -39,3 +39,4 @@ sudo snap install discord;
 
 bash ./big-installs/NVIDIA.sh;
 bash ./big-installs/texlive.sh;
+bash ./big-installs/robosub.sh;
