@@ -15,8 +15,8 @@ New order: (Yet to be Tested)
    4. Configure Rhythmbox
    5. Continue to Step 3
 3. Basic Tools
-   1. Run git Install.sh and configure ssh key.
-   2. Run Basic Tools Install.sh
+   1. Run git.sh and configure ssh key.
+   2. Run Basic Tools.sh
    3. Once terminator is installed, customize the Prefernces
    4. Once Chrome is installed, sync the account and customize the settings.
    5. Once Opera is installed, get the bookmarks and customize the settings
