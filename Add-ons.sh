@@ -1,5 +1,3 @@
-cd ~;
-
 bash ./unity/Install.sh;
 
 bash ./atom/Install.sh;

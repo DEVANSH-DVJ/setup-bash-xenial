@@ -7,10 +7,8 @@ sudo apt -y install code;
 
 ## Extensions:
 # Bash Beautify
-# Docker
 # Git History
 # Markdown Shortcuts
 # Python
-# Remote Development
 # shell-format
 # Trailing Spaces
