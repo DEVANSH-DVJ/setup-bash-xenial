@@ -5,8 +5,8 @@ Old : Run scripts inside folders in respective order. (Tested but not deprecated
 
 New order: (Yet to be Tested)
 1. Primary Setup
-   1. Make changes to the Settings (settings/)
-   2. Run Primary Setup.sh
+   1. Run Primary Setup.sh
+   2. Make changes to the Settings (settings/)
    3. Continue to Step 2
 2. Windows connection
    1. Run windows/Windows-1.sh
