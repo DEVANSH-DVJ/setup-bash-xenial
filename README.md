@@ -26,8 +26,8 @@ New order: (Yet to be Tested)
    2. Check each environment during Step 5.
 5. Add-ons
    1. Run Add-ons.sh
-   2. Check packages in Atom
-   3. Install Extensions for VSCode
+   2. Check packages and update config.cson in Atom
+   3. Install Extensions and settings.json update for VSCode
    4. While the big installs happen, configure unity-tweak-tools
    5. Once the driver is installed, configure the changes.
    6. Once ros is installed, setup robosub repo using robosub.sh
