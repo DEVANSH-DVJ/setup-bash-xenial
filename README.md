@@ -30,7 +30,6 @@ New order: (Yet to be Tested)
    3. Install Extensions and settings.json update for VSCode
    4. While the big installs happen, configure unity-tweak-tools
    5. Once the driver is installed, configure the changes.
-   6. Once ros is installed, setup robosub repo using robosub.sh
-   7. **Reboot**
+   6. **Reboot**
 
 Note: Run all bash scripts from the base directory of this repo.
