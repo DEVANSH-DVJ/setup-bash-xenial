@@ -9,7 +9,7 @@ bash ./vim/Install.sh;
 bash ./vim/Configurations.sh;
 
 bash ./browsers/Chrome.sh;
-bash ./browsers/Opera.sh;
+# bash ./browsers/Opera.sh;
 
 sudo apt -y install curl;
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -;

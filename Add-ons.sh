@@ -27,9 +27,9 @@ sudo rm -rf pdfsam-3.1.0.RELEASE-1_all.deb;
 # sudo ./FoxitReader.*.run;
 # sudo rm -rf Foxit*;
 
-sudo add-apt-repository ppa:pinta-maintainers/pinta-stable
-sudo apt update;
-sudo apt -y install pinta;
+# sudo add-apt-repository ppa:pinta-maintainers/pinta-stable
+# sudo apt update;
+# sudo apt -y install pinta;
 sudo apt -y install vlc;
 sudo snap install telegram-desktop;
 sudo snap install discord;
